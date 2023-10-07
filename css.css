@@ -1,0 +1,41 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    width: fit-content;
+    border: 10px solid black;
+    border-image:url(./images.jpg) 1;
+    /* padding: 15px; */
+}
+h4,h3{
+    text-align: center;
+}
+h3{
+    color: red;
+}
+h3{
+    font-size: 35px;
+}
+h4{
+    font-size: 25px;
+}
+.tiet{
+    width: 50px;
+}
+.cent{
+    text-align: center;
+}
+.if{
+    display: inline-block;
+    width: 100px;
+    margin: 8px 0px 8px 46px;
+}
+input[type='text']{
+    border: 2px solid pink;
+}
+.nof{
+    font-size: 13px;
+}
+input[type='submit']{
+    margin-top: 10px;
+}

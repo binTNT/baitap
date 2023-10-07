@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bai 2</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <h4>Thiết kế trang web</h4>
+    <h3>Form đăng kí học tín chỉ</h3>
+    <form action="">
+        <label for="name" class="if">Họ và tên:</label>
+        <input type="text" name="name" id="">
+        <span>*</span>
+        <br>
+        <label for="class" class="if">Lớp:</label>
+        <input type="text" name="class" id="">
+        <span>*</span>
+        <br>
+        <table border="1">
+            <tr>
+                <th>Mã LHP</th>
+                <th>Lớp học phần</th>
+                <th>Số TC</th>
+                <th>Thứ</th>
+                <th class="tiet">Tiết</th>
+                <th>Chọn</th>
+                <th>Giáo viên giảng dạy</th>
+                <th>Phòng</th>
+                <th>Ghi chú</th>
+            </tr>
+            <tr id="r2">
+                <td class="cent">JAVA</td>
+                <td>J2EE</td>
+                <td class="cent">3</td>
+                <td class="cent">2</td>
+                <td class="tiet cent">1-4</td>
+                <td class="cent"><input type="checkbox" name="J2EE" id="i1" onchange="check('r2','i1')"></td>
+                <td>Ths Nguyễn Văn Lành</td>
+                <td class="cent">A208</td>
+                <td></td>
+            </tr>
+            <tr id="r3">
+                <td class="cent">UML1</td>
+                <td>Phân tích & Thiết kế hướng đối tượng 1</td>
+                <td class="cent">3</td>
+                <td class="cent">2</td>
+                <td class="tiet cent">6-7</td>
+                <td class="cent"><input type="checkbox" name="UML1" id="i2" onchange="check('r3','i2')"></td>
+                <td>Ts Nguyễn Thanh Bình</td>
+                <td class="cent">A207</td>
+                <td></td>
+            </tr>
+            <tr id="r4">
+                <td class="cent">UML2</td>
+                <td>Phân tích & Thiết kế hướng đối tượng 2</td>
+                <td class="cent" >3</td>
+                <td class="cent">4</td>
+                <td class="tiet cent">8-9</td>
+                <td class="cent"><input type="checkbox" name="UML2" id="i3" onchange="check('r4','i3')"></td>
+                <td>Ths Nguyễn Văn Minh</td>
+                <td class="cent">A206</td>
+                <td></td>
+            </tr>
+            <tr id="r5">
+                <td class="cent">CSD1</td>
+                <td>Cơ sở dữ liệu phân tán 1</td>
+                <td class="cent">3</td>
+                <td class="cent">4</td>
+                <td class="tiet cent">9-10</td>
+                <td class="cent"><input type="checkbox" name="CSD1" id="i4" onchange="check('r5','i4')"></td>
+                <td>Ths Trần Văn Kiên</td>
+                <td class="cent">A205</td>
+                <td></td>
+            </tr>
+            <tr id="r6">
+                <td class="cent">CSD2</td>
+                <td>Cơ sở dữ liệu phân tán 2</td>
+                <td class="cent">3</td>
+                <td class="cent">5</td>
+                <td class="tiet cent">1-4</td>
+                <td class="cent"><input type="checkbox" name="CSD2" id="i5" onchange="check('r6','i5')"></td>
+                <td>Ths Đỗ Thị Hoa</td>
+                <td class="cent">A204</td>
+                <td></td>
+            </tr>
+            <tr id="r7"> 
+                <td class="cent">TTNT</td>
+                <td>Trí tuệ nhân tạo</td>
+                <td class="cent">3</td>
+                <td class="cent">5</td>
+                <td class="tiet cent">1-4</td>
+                <td class="cent"><input type="checkbox" name="TTNT" id="i6" onchange="check('r7','i6')"></td>
+                <td>Ts Trần Thảo Nguyên</td>
+                <td class="cent">A201</td>
+                <td></td>
+            </tr>
+        </table>
+        <span class="nof">Tổng tín chỉ đã chọn: (Bạn chỉ được chọn những lớp học phần không trùng giờ, không trùng môn và tổng tín chỉ >=12)</span><br>
+            <input type="submit" value="Submit" id="sub" disabled>
+            <input type="reset" value="Reset">
+            <button type="">Giúp đỡ</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
